@@ -2,8 +2,6 @@ BasicBackboneExample.Views.PhotosIndex = Backbone.View.extend({
 
   tagName: 'ul',
 
-  template = _.template( "<h1>first hi</h1>" ),
-
   appendPhoto: function(photo){
     console.log("appending photo");
     photo_view = new BasicBackboneExample.Views.Photo({ model: photo });
