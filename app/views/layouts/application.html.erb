@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BasicBackboneExample</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+
+<script type="text/template" id="photo-template">
+  <h2>photo</h2>
+</script>
+
+<script type="text/template" id="photos-index-template">
+  <ul id="photos">photos</ul>
+</script>
+
+</body>
+</html>

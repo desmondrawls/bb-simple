@@ -1,0 +1,1 @@
+<img src="<%= @photo.get('url') %>" alt="superhero" height="70" width="70">
