@@ -1,9 +1,8 @@
 BasicBackboneExample.Views.PhotosIndex = Backbone.View.extend({
 
   tagName: 'ul',
-  id: 'photos',
 
-
+  template = _template( $('#photo-index-template').html() ),
 
   appendPhoto: function(photo){
     console.log("appending photo");
@@ -12,7 +11,7 @@ BasicBackboneExample.Views.PhotosIndex = Backbone.View.extend({
   },
 
   render: function(){
-    debugger;
+    this.$el.html(this.template());
     this.collection.each(this.appendPhoto, this);
     console.log("leaving render");
     return this;
