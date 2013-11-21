@@ -5,14 +5,12 @@ BasicBackboneExample.Views.Photo = Backbone.View.extend ({
     this.listenTo(this.model, 'destroy', this.remove); 
     },
   
-  tagName: 'li',
-
-  el: '#photos'.
+  template: _.template("<h1>hi</h1>"),
 
   className: 'photo_list_item',
 
   render: function() {
-    this.$el.html(this.template(photo: this.model.toJSON()));
+    this.$el.html(this.template(this.model.toJSON()));
     return this;
   }
 

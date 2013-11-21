@@ -10,4 +10,5 @@ window.BasicBackboneExample =
 
 
 $(document).ready ->
+  debugger
   BasicBackboneExample.initialize()

@@ -9,5 +9,5 @@ class BasicBackboneExample.Routers.Photos extends Backbone.Router
   main: ->
     console.log("in main")
     @photos.fetch success: =>
-      indexview = new BasicBackboneExample.Views.PhotosIndex(collection: @photos)
+      indexview = new BasicBackboneExample.PhotosIndex(collection: @photos)
       $('#container').html(indexview.render().el)
